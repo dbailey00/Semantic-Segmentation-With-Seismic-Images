@@ -1,12 +1,11 @@
-# TGS Salt Identification Challenge. Using Semantic Segmentation
-## Training a Multiclass Classification Model to classify Salt Pixels in a Seismic Image
+# Using Neural Networks to classify Salt Pixels in a Seismic Image
 
-![siesmic images]
+![siesmic images](https://wholefish.files.wordpress.com/2009/05/salt_domeseismic.jpg)
 
 ## README Contents
  - [Introduction](#Abstract)
  - [Methodology](#Methodology)
- - [U-Net](##U-Net)
+ - [U-Net](#U-Net)
  - [Model Evaluation](#Model-Evaluation)
  - [Conclusions and Next Steps](#Conclusions-and-Next-Steps)
  - [Sources](#Sources)
@@ -27,6 +26,8 @@ For this problem I chose to use a U-Net model, which is a model used for semanti
 
 ## U-Net
 
+![U-NET](http://deeplearning.net/tutorial/_images/unet.jpg)
+
 The U-Net was devoloped by Olaf-Ronneberger for Bio Medical Image Segmentation.The architecture contains two paths. First path is the contraction path (also called as the encoder) which is used to capture the context in the image. The encoder is just a traditional stack of convolutional and max pooling layers. The second path is the symmetric expanding path (also called as the decoder) which is used to enable precise localization using transposed convolutions. Thus it is an end-to-end fully convolutional network (FCN), i.e. it only contains Convolutional layers and does not contain any Dense layer because of which it can accept image of any size.
 
 ## Model Evaluation
@@ -39,7 +40,7 @@ The U-Net was devoloped by Olaf-Ronneberger for Bio Medical Image Segmentation.T
 
 I am happy with the model scores, but know there is room for improvement. The model scored in the top 30% of the kaggle competition of over 3,500 participants.
 
-## Conclusion and Next Steps
+## Conclusions and Next Steps
 
 - 1. Try other semantic segmentation models (i.e. R-CNN, FRRN)
 - 2. Grid searching over parameters
