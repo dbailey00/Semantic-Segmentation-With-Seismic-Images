@@ -36,7 +36,7 @@ The U-Net was devoloped by Olaf-Ronneberger for Bio Medical Image Segmentation.T
 
 | Model|Train Score|Test Score|Kaggle Score|
 |---|---|---|---|
-|U-Net with Resnet| 82.10% | 78.48% | %81.79 |
+|U-Net with Resnet| 82.10% | 78.48% | 81.79% |
 
 I am happy with the model scores, but know there is room for improvement. The model scored in the top 30% of the kaggle competition of over 3,500 participants.
 
